@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace "eu.kanade.tachiyomi.extension.ko.ntk"
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "eu.kanade.tachiyomi.extension.ko.ntk"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.4.0"
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+}
